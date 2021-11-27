@@ -35,13 +35,13 @@ body {
 
 .task-item__text,
 .task-item__editor,
-.task-to-add__editor {
+.new-task__editor {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-to-add__content {
+.new-task__content {
   display: flex;
 }
 
@@ -78,7 +78,7 @@ button:hover {
 /* Heading */
 
 h3,
-label[for="task-to-add__text"] {
+label[for="new-task__text"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -108,12 +108,12 @@ input[type="text"]:focus {
 
 /* New Task */
 
-label[for="task-to-add__text"] {
+label[for="new-task__text"] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#task-to-add__text {
+input#new-task__text {
   width: 318px;
 }
 

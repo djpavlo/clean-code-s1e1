@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementById("task-to-add__text"); //Add a new task.
+var taskInput = document.getElementById("new-task__text"); //Add a new task.
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //ul of #incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
@@ -61,7 +61,7 @@ var createNewTaskElement = function(taskString) {
 
 var addTask = function() {
   console.log("Add Task...");
-  //Create a new list item with the text from the #task-to-add__text:
+  //Create a new list item with the text from the #new-task__text:
   if (!taskInput.value) return;
   var listItem = createNewTaskElement(taskInput.value);
 
@@ -85,7 +85,7 @@ var editTask = function() {
   var editInput = listItem.querySelector("input[type=text]");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".task-item__edit-btn");
-  var containsClass = listItem.classList.contains("editMode");
+  var containsClass = listItem.classList.contains("task-item_editMode");
   //If class of the parent is .editmode
   if (containsClass) {
 
@@ -99,7 +99,7 @@ var editTask = function() {
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("editMode");
+  listItem.classList.toggle("task-item_editMode");
 };
 
 
