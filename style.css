@@ -26,7 +26,7 @@
   .header {
     text-align: center;
   }
-  
+
 }
 
 .main-page {
@@ -40,7 +40,7 @@
 .new-task__editor {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .new-task__content {
@@ -58,12 +58,6 @@
 .done__header {
   list-style: none;
 }
-
-
-/* input,
-button {
-  outline: none;
-} */
 
 .button {
   background: none;
@@ -155,7 +149,7 @@ button {
 
 .task-item__editor {
   outline: none;
-  width: 226px
+  width: 226px;
 }
 
 .task-item__del-btn-img {
@@ -180,7 +174,7 @@ button {
 /* Edit Task */
 
 .task-item__editor {
-  display: none
+  display: none;
 }
 
 .task-item_editMode .task-item__editor {
