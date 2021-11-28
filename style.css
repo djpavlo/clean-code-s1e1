@@ -22,11 +22,9 @@
 }
 
 @media (max-width:768px) {
-
   .header {
     text-align: center;
   }
-
 }
 
 .main-page {
@@ -165,7 +163,7 @@
 
 /* Completed */
 
-.done__list#completed-tasks label {
+.done__list label {
   text-decoration: line-through;
   color: #888;
 }
