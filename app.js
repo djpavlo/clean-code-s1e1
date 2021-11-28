@@ -18,33 +18,38 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 var createNewTaskElement = function(taskString) {
 
   var listItem = document.createElement("li");
+  listItem.className = ("task-item");
 
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
+  checkBox.className = ("task-item__checkbox");
+  checkBox.type = "checkbox";
+
   //label
   var label = document.createElement("label"); //label
+  label.className = "task-item__text";
+  label.innerText = taskString;
+
   //input (text)
   var editInput = document.createElement("input"); //text
+  editInput.className = "task-item__editor";
+  editInput.type = "text";
+
   //button.edit
   var editButton = document.createElement("button"); //edit button
+  editButton.classList.add("task-item__edit-btn");
+  editButton.classList.add("button");
+  editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
 
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
+  deleteButton.classList.add("task-item__del-btn");
+  deleteButton.classList.add("button");
+
   var deleteButtonImg = document.createElement("img"); //delete button image
-
-  label.innerText = taskString;
-  label.className = "task-item__text";
-
-  //Each elements, needs appending
-  checkBox.type = "checkbox";
-  editInput.type = "text";
-  editInput.className = "task-item__editor";
-
-  editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "task-item__edit-btn";
-
-  deleteButton.className = "task-item__del-btn";
+  deleteButtonImg.className = ("task-item__del-btn-img");
   deleteButtonImg.src = "./remove.svg";
+
   deleteButton.appendChild(deleteButtonImg);
 
 
