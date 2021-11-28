@@ -8,20 +8,20 @@
 </head>
 
 <body class="body">
-  <div class="header">
+  <header class="header">
     <img class="header__img" src="./eisenhower-matrix.jpg">
     <a class="header__content" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main-page">
-    <p id="new-task">
+  </header>
+  <main class="main-page">
+    <section id="new-task">
       <label class="new-task__label" for="new-task__text">Add Item</label>
       <div class="new-task__content">
         <input id="new-task__text" class="new-task__editor" type="text">
         <button class="new-task__add-btn button">Add</button>
       </div>
-    </p>
+    </section>
 
-    <div class="todo">
+    <section class="todo">
       <h3 class="todo__header task-header">Todo</h3>
       <ul class="todo__list" id="incomplete-tasks">
         <li class="task-item">
@@ -39,8 +39,9 @@
           <button class="task-item__del-btn button"><img class = "task-item__del-btn-img" src="./remove.svg"></button>
         </li>
       </ul>
-    </div>
-    <div class="done">
+    </section>
+    
+    <section class="done">
       <h3 class="done__header task-header">Completed</h3>
       <ul class="done__list" id="completed-tasks">
         <li class="task-item">
@@ -51,8 +52,8 @@
           <button class="task-item__del-btn button"><img class = "task-item__del-btn-img" src="./remove.svg"></button>
         </li>
       </ul>
-    </div>
-  </div>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 
